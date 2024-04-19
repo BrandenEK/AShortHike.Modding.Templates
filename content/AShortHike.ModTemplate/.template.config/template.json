@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Damocles",
+  "classifications": [ "Short Hike", "Mod" ],
+  "identity": "AShortHike.Mod",
+  "name": "Short Hike Mod",
+  "shortName": "hikemod",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "preferNameDirectory": true,
+  "sourceName": "AShortHike.ModTemplate",
+  "symbols": {
+	"id": {
+		"type": "generated",
+		"generator": "regex",
+		"dataType": "text",
+		"defaultValue": "DefaultMod",
+        "replaces": "ModTemplate",
+		"fileRename": "ModTemplate",
+		"parameters": {
+			"source": "name",
+			"steps": [
+			  {
+				"regex": "^.*\\.",
+				"replacement": ""
+			  }
+			]
+		}
+	},
+    "mod": {
+      "type": "parameter",
+      "description": "The name of the mod to be displayed on the main menu",
+      "datatype": "text",
+	  "defaultValue": "Default Mod",
+      "replaces": "Mod Template"
+    },
+    "author": {
+      "type": "parameter",
+      "description": "The author of the mod",
+      "datatype": "text",
+	  "defaultValue": "Unknown",
+      "replaces": "Mod Creator"
+    },
+    "version": {
+      "type": "parameter",
+      "description": "The version of the game that the mod is for",
+      "datatype": "text",
+      "defaultValue": "1.9.24",
+	  "replaces": "1.9.24"
+    }
+  }
+}

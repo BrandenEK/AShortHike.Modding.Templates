@@ -1,0 +1,1 @@
+Templates to use when creating mods for A Short Hike
